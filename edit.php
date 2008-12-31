@@ -15,6 +15,7 @@ if ($_POST['id'] && $_POST['package'] && $_POST['version'] && $_POST['path'] && 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Edit</title>
+<link rel="stylesheet" href="style.css" type="text/css">
 <style type="text/css" media="screen">
 	label {
 		width: 200px;
@@ -38,15 +39,17 @@ if (!$id) { print "<h1>No id given - Can't get information.</h1>"; return; }
 $release = $db->query("SELECT * FROM releases WHERE id=$id");
 ?>
 
-<form action="edit.php" method="post" accept-charset="utf-8">
-	<input type="hidden" name="id" value="<? print $id; ?>" id="id">
-	<p><label for="package">Package:</label> <input type="text" name="package" value="<? print $release['package']; ?>" id="package"></p>
-	<p><label for="version">Version:</label> <input type="text" name="version" value="<? print $release['version']; ?>" id="version"></p>
-	<p><label for="path">Path:</label> <input type="text" name="path" value="<? print $release['path']; ?>" id="path"></p>
+<div class="copy">
+	<h1>Edit <? print $release['package'] . ' ' . $release['version']; ?></h1>
+	<form action="edit.php" method="post" accept-charset="utf-8">
+		<input type="hidden" name="id" value="<? print $id; ?>" id="id">
+		<p><label for="package">Package:</label> <input type="text" name="package" value="<? print $release['package']; ?>" id="package"></p>
+		<p><label for="version">Version:</label> <input type="text" name="version" value="<? print $release['version']; ?>" id="version"></p>
+		<p><label for="path">Path:</label> <input type="text" name="path" value="<? print $release['path']; ?>" id="path"></p>
 	
-	<p><input type="submit" value="Update"></p>
-</form>
-
+		<p style="text-align: center;"><input type="submit" value="Update" style="width: auto"></p>
+	</form>
+</div>
 
 </body>
 </html>

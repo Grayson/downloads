@@ -44,7 +44,7 @@ else {
 
 				<p><label for="version">Version</label><input type="text" name="version" value="" id="version"></p>
 				<p><label for="path">Path</label><input type="text" name="path" value="" id="path"></p>
-				<p><input type="submit" value="Add release" id="submit_button"></p>
+				<p style="text-align: center;"><input type="submit" value="Add release" id="submit_button" style="text-align: center; width: auto;"></p>
 			</form>
 		</div>
 	</div>

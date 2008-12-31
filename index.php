@@ -13,7 +13,7 @@ $db = new DownloadsDB();
 
 <h1 id="banner">Downloads</h1>
 <div class="copy">
-	<h1>The following projects are available for download:</h1>
+	<h1>The following packages are available for download:</h1>
 	<ul>
 		<?
 			foreach($db->query("SELECT DISTINCT(displayName) FROM files;") as $app) {
