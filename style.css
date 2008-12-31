@@ -1,0 +1,99 @@
+img { border: 0; }
+a { text-decoration: none; }
+a:hover { text-decoration:underline; }
+body { background: #6CF; padding: 0; margin: 0; }
+
+div {
+	background: #fff;
+	margin: 1em;
+	padding-bottom: 0.2em;
+	border: 2px inset silver;
+}
+
+h1 {
+	color: #000;
+	background: #FF8000;
+	padding: 0;
+	margin: 0;
+	padding: 0.1em;
+}
+
+h1 span {
+	color: #fff;
+	font-size: 70%;
+	float: right;
+	line-height: 2em;
+}
+
+label { display: block; }
+input { width: 250px; }
+
+th { border-bottom: 1px dotted #f80; color: #aaa; }
+td, th {
+	text-align: right;
+	padding: 0.2em 0.5em;
+}
+td.l, th.l { text-align: left; }
+tr:hover {
+	background: #fed;
+}
+table { width: 100%;}
+tr.h { background: 0; }
+
+div p { margin: 1em; }
+
+#packages { 
+	overflow: hidden; 
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#packages div {
+	width: 250px;
+	float: left;
+}
+
+#new_release {
+	margin: 1em;
+	overflow: hidden;
+	display: inline-table;
+}
+
+#recents {
+	clear: both;
+}
+
+#banner {
+	text-align: center;
+	border-bottom: 3px solid #a50;
+}
+
+#login { 
+	width: 285px;
+	padding-bottom: 0.4em;
+	margin: 1em auto;
+}
+
+.divider {
+	margin: 1em 0 0 0;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #777;
+}
+
+.copy {
+	margin: 1em 20%;
+}
+
+.center {
+	text-align: center;
+	background: 0;
+	border: 0;
+}
+
+.center * {
+	text-align: left;
+}
